@@ -16,9 +16,11 @@ const CardSocial = ({
         className={`
         bg-[#F0F3FA] 
         rounded-md 
-        border-t-8 
-        ${borderTop} p-6 text-center hover:bg-gray-500/20 transition-all cursor-pointer
-        
+        ${borderTop} 
+        p-6 text-center 
+        hover:bg-gray-500/20 
+        transition-all 
+        cursor-pointer
         `}
     >
         <div className="flex justify-center items-center">
@@ -43,25 +45,33 @@ const App = () => {
                 <CardSocial
                     iconSocial={iconFacebook}
                     icon={iconUp}
-                    borderTop={"border-blue-500"}
+                    borderTop={
+                        "relative before:absolute before:inset-0 before:h-2 before:rounded-t-md before:bg-gradient-to-r before:from-[#FDB55D] before:to-[#DE428B]"
+                    }
                     dataNumber={"1986"}
                 />
                 <CardSocial
                     iconSocial={iconTwitter}
                     icon={iconUp}
-                    borderTop={"border-green-500"}
+                    borderTop={
+                        "relative before:absolute before:inset-0 before:h-2 before:rounded-t-md before:bg-gradient-to-r before:from-[#FDB55D] before:to-[#DE428B]"
+                    }
                     dataNumber={"100"}
                 />
                 <CardSocial
                     iconSocial={iconInstagram}
                     icon={iconUp}
-                    borderTop={"border-pink-500"}
+                    borderTop={
+                        "relative before:absolute before:inset-0 before:h-2 before:rounded-t-md before:bg-gradient-to-r before:from-[#FDB55D] before:to-[#DE428B]"
+                    }
                     dataNumber={"3500"}
                 />
                 <CardSocial
                     iconSocial={iconYoutube}
                     icon={iconDown}
-                    borderTop={"border-red-500"}
+                    borderTop={
+                        "relative before:absolute before:inset-0 before:h-2 before:rounded-t-md before:bg-gradient-to-r before:from-[#FDB55D] before:to-[#DE428B]"
+                    }
                     dataNumber={"200"}
                     colorTextToday={"text-red-500"}
                 />
